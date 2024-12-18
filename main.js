@@ -68,7 +68,7 @@ class Logo {
 }
 
 async function main() {
-  let logo = new Logo("/images/logo/logo.svg");
+  let logo = new Logo("./images/logo/logo.svg");
   console.log("calling main");
   logo.init();
   console.log("START.....");
