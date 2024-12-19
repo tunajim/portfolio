@@ -59,7 +59,9 @@ main {
 }
 
 .logo_letter.swirl-off {
+	display: block;
 	animation: logo_text_swirl_off 2s ease forwards;
+	-webkit-animation: logo_text_swirl_off 2s ease forwards;
 }
 
 
@@ -85,6 +87,12 @@ header {
 
 @keyframes logo_text_swirl_off {
 	from {
-		stroke-dashoffset: 0%;
+		stroke-dashoffset: 0;
+	}
+}
+
+@-webkit-keyframes logo_text_swirl_off {
+	from {
+		stroke-dashoffset: 0;
 	}
 }

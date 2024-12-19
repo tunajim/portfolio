@@ -57,6 +57,8 @@ class Logo {
 
   async swirlOut() {
     this.logo.letters.forEach(async (letter) => {
+      letter.setAttribute("stroke-dasharray", letter.getTotalLength());
+      letter.setAttribute("stroke-dashoffset", letter.getTotalLength());
       letter.classList.add("swirl-off");
     });
     return new Promise((res) => {
